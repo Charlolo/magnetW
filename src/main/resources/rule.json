@@ -194,5 +194,17 @@
     "paths": {
       "preset": "/index/index/k/%s/p/%d"
     }
+  },{
+    "site": "tordl磁力站",
+    "proxy": false,
+    "group": "//tr[@class='default']",
+    "magnet": "./td[3]/a[2]/@href",
+    "name": "./td[2]/a",
+    "size": "./td[4]",
+    "date": "./td[5]",
+    "url": "https://sukebei.tordl.com",
+    "paths": {
+      "preset": "/search/?keyword=%s&sid=0"
+    }
   }
 ]
