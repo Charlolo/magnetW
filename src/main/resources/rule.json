@@ -204,7 +204,8 @@
     "date": "./td[5]",
     "url": "https://sukebei.tordl.com",
     "paths": {
-      "preset": "/search/?keyword=%s&sid=0&page=%d"
+      "preset": "/search/?keyword=%s&sid=0&page=%d",
+      "size": "/search/?keyword=%s&sid=0&page=%d"
     }
   }
 ]
