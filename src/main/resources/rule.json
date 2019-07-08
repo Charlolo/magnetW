@@ -1,5 +1,5 @@
 [
-  {
+ {
     "site": "种子搜",
     "proxy": false,
     "group": "//table[@class='table table-bordered table-striped']",
