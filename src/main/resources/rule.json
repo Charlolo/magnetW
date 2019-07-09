@@ -47,7 +47,7 @@
   },
   {
     "site": "BT4G",
-    "proxy": true,
+    "proxy": false,
     "group": "//div[@class='search-item detail-width']",
     "magnet": "./div[1]/h3/a/@href",
     "name": "./div[1]/h3/a",
@@ -79,7 +79,7 @@
   },
   {
     "site": "Sukebei Nyaa",
-    "proxy": true,
+    "proxy": false,
     "group": "//div[@class='table-responsive']/table/tbody/tr",
     "magnet": "./td[3]/a[2]/@href",
     "name": "./td[2]/a",
@@ -95,7 +95,7 @@
   },
   {
     "site": "BTSOW",
-    "proxy": true,
+    "proxy": false,
     "group": "//div[@class='row']",
     "magnet": "./a/@href",
     "name": "./a/div[1]",
@@ -124,7 +124,7 @@
   },
   {
     "site": "idope",
-    "proxy": true,
+    "proxy": false,
     "group": "//div[@class=\"resultdiv\"]",
     "magnet": "./div[1]/a/@href",
     "name": "./div[1]/a/div",
@@ -183,6 +183,7 @@
   },
   {
     "site": "卧槽搜搜",
+    "proxy": false,
     "group": "//td[@class='x-item']",
     "magnet": "./h3/a/@href",
     "name": "./h3/a",
