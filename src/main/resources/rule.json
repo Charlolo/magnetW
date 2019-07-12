@@ -22,7 +22,7 @@
     "magnet": "./td[4]/a/@href",
     "name": "./td[3]//a",
     "size": "./td[5]",
-    "date": "./td[1]",
+    "date": "./td[1]/span",
     "url": "https://share.dmhy.org",
     "hot": "./td[7]/span",
     "paths": {
