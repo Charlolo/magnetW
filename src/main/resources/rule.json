@@ -18,7 +18,7 @@
   {
     "site": "动漫花园",
     "proxy": false,
-    "group": "//table[@id='topic_list']/tbody/tr",
+    "group": "//table[@id='topic_list']/tbody//tr",
     "magnet": "./td[4]/a/@href",
     "name": "./td[@class='title']/a[2]/@href",
     "size": "./td[5]",
@@ -26,7 +26,8 @@
     "url": "https://share.dmhy.org",
     "hot": "./td[7]/span",
     "paths": {
-      "preset": "/topics/list/page/%d?keyword=%s"
+      "preset": "/topics/list/page/%d?keyword=%s",
+      "time": "/topics/list/page/%d?keyword=%s&order=date-desc"
     }
   },
   {
@@ -39,8 +40,7 @@
     "date": "./td[5]",
     "url": "https://sukebei.tordl.com",
     "paths": {
-      "preset": "/search/?keyword=%s&sid=0&page=%d",
-      "size": "/search/?keyword=%s&sid=0&page=%d"
+      "preset": "/search/?keyword=%s&sid=0&page=%d"
     }
   },
   {
