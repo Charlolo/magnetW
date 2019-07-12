@@ -20,7 +20,7 @@
     "proxy": false,
     "group": "//tr[@class='']",
     "magnet": "./td[4]/a/@href",
-    "name": "./td[@class='title']/a[2]/@href",
+    "name": "./td[3]/a[2]/@href",
     "size": "./td[5]",
     "date": "./td[1]",
     "url": "https://share.dmhy.org",
