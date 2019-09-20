@@ -1,5 +1,5 @@
 [
- {
+  {
     "site": "种子搜",
     "proxy": false,
     "group": "//table[@class='table table-bordered table-striped']",
@@ -13,21 +13,9 @@
       "time": "/list/%s/%d",
       "size": "/list_length/%s/%d",
       "hot": "/list_click/%s/%d"
-    }
-  },
-  {
-    "site": "动漫花园",
-    "proxy": false,
-    "group": "//tr[@class='']",
-    "magnet": "./td[4]/a/@href",
-    "name": "./td[3]//a",
-    "size": "./td[5]",
-    "date": "./td[1]/span",
-    "url": "https://share.dmhy.org",
-    "hot": "./td[7]/span",
-    "paths": {
-      "preset": "/topics/list/page/%d?keyword=%s",
-      "time": "/topics/list/page/%d?keyword=%s&order=date-desc"
+    },
+    "detail": {
+      "files": "//*[@id=\"wrapp\"]/div[2]/div/div/div[3]/div[1]/div[2]/div[2]/select/option"
     }
   },
   {
@@ -41,6 +29,45 @@
     "url": "https://sukebei.tordl.com",
     "paths": {
       "preset": "/search/?keyword=%s&sid=0&page=%d"
+    },
+    "detail": {
+      "files": "//div[@class=\"torrent-file-list panel-body\"]//ul/li"
+    }
+  },
+  {
+    "site": "磁力果",
+    "proxy": false,
+    "group": "//div[@class=\"card mb-4\"]",
+    "magnet": "./div[1]/div[2]/div/button[1]/@data-src",
+    "name": "./div[1]/div[1]/a",
+    "size": "./div[2]/div/div[1]/small[2]/span",
+    "date": "./div[2]/div/div[1]/small[1]/span",
+    "hot": "./div[2]/div/div[1]/small[3]/span",
+    "url": "https://ciliguo.cc",
+    "paths": {
+      "preset": "/search?q=%s&p=%d"
+    },
+    "detail": {
+      "files": "//div[@class=\"card mt-4 mb-4 card-info\"]/div[2]/div[1]/div/div[1]/span"
+    }
+  },
+  {
+    "site": "磁力王",
+    "proxy": false,
+    "group": "//div[@class=\"single_cont\"]",
+    "magnet": "./ul[1]/li/h3/a/@data-src",
+    "name": "./ul[1]/li/h3/a",
+    "size": "./ul[2]/li[2]/span",
+    "date": "./ul[2]/li[1]/text()",
+    "hot": "./ul[1]/li/h3/span/span[3]",
+    "url": "https://www.ciliwang.club",
+    "paths": {
+      "preset": "/list.html?keyword=%s&page=%d&sort=ai",
+      "time": "/list.html?keyword=%s&page=%d&sort=time",
+      "hot": "/list.html?keyword=%s&page=%d&sort=hot"
+    },
+    "detail": {
+      "files": "//div[@class=\"file_list\"]/ol/li"
     }
   },
   {
@@ -52,11 +79,14 @@
     "size": "./div[@class='item-bar']/span[4]/b",
     "date": "./div[@class='item-bar']/span[1]/b",
     "hot": "./div[@class='item-bar']/span[2]/b",
-    "url": "http://www.btakt.com",
+    "url": "http://www.btdet.com",
     "paths": {
       "time": "/search/%s-first-asc-%d",
       "size": "/search/%s-size-desc-%d",
       "hot": "/search/%s-hot-desc-%d"
+    },
+    "detail": {
+      "files": "//*[@id=\"wall\"]/ol/li"
     }
   },
   {
@@ -73,6 +103,9 @@
       "time": "/search/%s/%d",
       "size": "/search/%s/bysize/%d",
       "hot": "/search/%s/byrequests/%d"
+    },
+    "detail": {
+      "files": "//*[@id=\"wall\"]/div[6]/div[2]/ol/li"
     }
   },
   {
@@ -89,6 +122,44 @@
       "time": "?q=%s&p=%d",
       "size": "?q=%s&s=size&o=desc",
       "hot": "?q=%s&s=downloads&o=desc"
+    },
+    "detail": {
+      "files": "//div[@class=\"torrent-file-list panel-body\"]/ul/li"
+    }
+  },
+  {
+    "site": "动漫花园1",
+    "proxy": false,
+    "group": "//*[@id=\"topic_list\"]/tbody/tr",
+    "magnet": "./td[4]/a/@href",
+    "name": "./td[3]/a",
+    "size": "./td[5]",
+    "date": "./td[1]/text()",
+    "hot": "./td[8]",
+    "url": "https://dmhy.anoneko.com",
+    "paths": {
+      "time": "/topics/list/page/%d?keyword=%s"
+    },
+    "detail": {
+      "files": "//div[@class=\"file_list\"]/ul/li"
+    }
+  },
+  {
+    "site": "动漫花园2",
+    "proxy": false,
+    "group": "//tr[@class='']",
+    "magnet": "./td[4]/a/@href",
+    "name": "./td[3]//a",
+    "size": "./td[5]",
+    "date": "./td[1]/span",
+    "url": "https://share.dmhy.org",
+    "hot": "./td[7]/span",
+    "paths": {
+      "preset": "/topics/list/page/%d?keyword=%s",
+      "time": "/topics/list/page/%d?keyword=%s&order=date-desc"
+    },
+    "detail": {
+      "files": "//div[@class=\"file_list\"]/ul/li"
     }
   },
   {
@@ -105,6 +176,9 @@
       "time": "?q=%s&p=%d",
       "size": "?q=%s&s=size&o=desc",
       "hot": "?q=%s&s=downloads&o=desc"
+    },
+    "detail": {
+      "files": "//div[@class=\"torrent-file-list panel-body\"]/ul/li"
     }
   },
   {
@@ -115,9 +189,12 @@
     "name": "./a/div[1]",
     "size": "./div[1]",
     "date": "./div[2]",
-    "url": "https://btsow.pw",
+    "url": "https://btspread.com",
     "paths": {
       "preset": "/search/%s/page/%d"
+    },
+    "detail": {
+      "files": "//div[@class=\"detail data-list\"]/div/text()"
     }
   },
   {
@@ -134,6 +211,9 @@
       "preset": "/search?f=%s&p=%d",
       "time": "/searchA?f=%s&p=%d",
       "size": "/searchS?f=%s&p=%d"
+    },
+    "detail": {
+      "files": "//div[@class=\"files\"]/ul/li"
     }
   },
   {
@@ -141,29 +221,16 @@
     "proxy": false,
     "group": "//div[@class=\"resultdiv\"]",
     "magnet": "./div[1]/a/@href",
-    "name": "./div[1]/a/div",
+    "name": "./div[1]/a",
     "size": "./div[2]/div[3]/div[2]",
     "date": "./div[2]/div[2]/div[2]",
     "url": "https://idope.se",
     "paths": {
       "preset": "/torrent-list/%s/?p=%d",
       "size": "/torrent-list/%s/?p=%d&o=-2"
-    }
-  },
-  {
-    "site": "BTbook",
-    "proxy": false,
-    "group": "//div[@class='cili-item']",
-    "magnet": "./div[1]/h3/a/@href",
-    "name": "./div[1]/h3/a",
-    "size": "./div[3]/span[3]/b",
-    "date": "./div[3]/span[2]/b/b",
-    "hot": "./div[3]/span[4]/b",
-    "url": "https://btbookk.net",
-    "paths": {
-      "time": "/sou/%s/time-%d.html",
-      "size": "/sou/%s/size-%d.html",
-      "hot": "/sou/%s/default-%d.html"
+    },
+    "detail": {
+      "files": "//div[@class=\"filetag\"]"
     }
   },
   {
@@ -197,18 +264,20 @@
   },
   {
     "site": "卧槽搜搜",
-    "proxy": false,
     "group": "//td[@class='x-item']",
     "magnet": "./h3/a/@href",
     "name": "./h3/a",
     "size": "./span[4]/b",
     "date": "./span[2]/b",
     "hot": "./span[3]/b",
-    "url": "http://www.wcs444.com",
+    "url": "http://www.wcs777.com",
     "paths": {
       "time": "/s/%s-first-asc-%d",
       "size": "/s/%s-size-desc-%d",
       "hot": "/s/%s-hot-desc-%d"
+    },
+    "detail": {
+      "files": "//div[@class=\"dd filelist\"]"
     }
   },
   {
